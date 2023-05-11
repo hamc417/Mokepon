@@ -1,0 +1,165 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #03001C;
+    }
+
+h1{                 /*selector de tipo*/
+    color: lightcoral;
+}
+
+.titulo{        /*selector de clase*/
+    color: white;
+    font-family: 'Coda', cursive;
+  
+    
+}
+
+#titulo1{       /*selector de id*/
+  
+
+}
+
+#seleccionar-mascota{
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: -moz-repeating-linear-gradient(#301E67,#B6EADA,#5B8FB9);
+}
+/*  Display inline, no permite cambiar width y height
+    Display inline block y block si permiten cambiar*/
+.subtitulo{
+    color: white;
+    font-size: 20px;
+
+}
+.tarjetas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+     
+
+.tarjetaMokepon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 180px;
+    height: 100px;
+    color: #B6EADA;
+    background-color : #301E67;
+    box-sizing: border-box; /*Esta propiedad hace que no crezca el contenedor con el padding, se toma hacia adentro*/
+    margin: 10px;
+    border: 1px solid #FFC300;
+    text-align: center;
+    border-radius: 30px;
+    padding: 6rem;
+
+}
+.tarjetaMokepon img{  
+    width: 6rem;
+}
+
+#boton-mascota{
+    font-family: 'Poppins', sans-serif;
+    width: 180px;
+height: 40px;
+border: 2px solid;
+border-radius: 20px;
+color: white;
+background: transparent;
+margin-top: 3rem;
+margin-bottom: 20px
+}
+
+input:checked + label{
+    box-shadow: 0 0 0 3px hotpink;
+    /* background-color: hotpink; */
+    width: 150px;
+  }
+
+input {
+    display: none; /*esconde el circulo de input radio*/
+  }
+
+/*Seleccionar Ataque*/
+#seleccionar-ataque{
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    background: -moz-repeating-linear-gradient(#301E67,#B6EADA,#5B8FB9);
+}
+
+.seleccionar-ataque__boton{
+    display: flex;
+    flex-direction: column;
+    gap:1rem
+    
+}
+/* @media (min-width: 768px) {
+   .seleccionar-ataque__boton{
+    flex-direction: row;
+   }
+ } */
+
+ @media (min-width: 768px) {
+    .tarjetas, .seleccionar-ataque__boton {
+        flex-direction: row;
+    }
+    }
+.botonDeAtaque{
+    background-color : #301E67;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 1rem;
+    border-color: transparent;
+    width: 10rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mensajes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10rem;
+    background: #5B8FB9;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    }
+
+#boton-reiniciar{
+    border: none;
+    color: #5B8FB9;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 0.5rem;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    
+}
+.ataques__bloque{
+    display: grid;
+    justify-items: center;
+    border: 0.5rem solid white;
+    padding: 1rem;
+    background: #B6EADA;
+    color: black;
+    margin-bottom: 3rem;
+}
+

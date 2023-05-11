@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokepon</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="seleccionar-mascota">
+        <h1 class="titulo" id="tiulo1">Mokepon</h1>
+        <h2 class="subtitulo">Elige tu mascota:</h2>
+
+        <div id="contenedorTarjetas" class="tarjetas">
+           <!--Se llevo el cod html a mokepones.forEach((mokepon)=> {     //recorriendo el arreglo mokepones
+        opcionDeMokepones = `
+        <input type="radio" name="mascota" id=${mokepon.nombre} />
+            <label class="tarjetaMokepon" for=${mokepon.nombre}>
+                <p>${mokepon.nombre}</p>
+                <img src=${mokepon.foto} alt=${mokepon.nombre}>
+            </label>`          //templates literarios, ` invertida, ahi vamos a meter la parte del html, se cambio, todo donde aparecia nombre por ${mokepon.nombre}
+
+            contenedorTarjetas.innerHTML += opcionDeMokepones; //con la opcion += me imprime en el html todos los objetos que esten en opcionDePokemones
+    })-->
+
+        </div>
+
+        <button id="boton-mascota">Seleccionar</button>
+
+
+
+    </section>
+
+
+    <section id="seleccionar-ataque">
+        <h1 class="titulo" id="tiulo1">Mokepon</h1>
+        <h2 class="subtitulo">Elige tu ataque:</h2>
+
+        <div id="contenedorAtaques" class="seleccionar-ataque__boton">
+     
+        </div>
+
+        <div id="mensajes">
+            <p id="resultado">MuchaSuerte!!!</p>
+            <section id="reiniciar">
+
+                <button id="boton-reiniciar">Reiniciar</button>
+            </section>
+
+        </div>
+
+        <div class="ataques">
+            <div class="ataques__bloque">
+                <p id="vidasJugador">3</p>
+                <p id="mascotaJugador"></p>
+                <div id="ataquesDelJugador"></div>
+
+
+            </div>
+            <div class="ataques__bloque">
+                <p id="vidasEnemigo">3</p>
+                <p id="mascotaEnemigo"></p>
+                <div id="ataquesDelEnemigo"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <script src="./scripts/mokepon.js"></script>
+
+</body>
